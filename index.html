@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaan Rahman's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.0/dist/full.css" rel="stylesheet">
+    <style>
+        .rounded-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Evaan Rahman</h1>
+            <ul class="flex space-x-4">
+                <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+                <li><a href="#skills" class="hover:text-yellow-400">Skills</a></li>
+                <li><a href="#projects" class="hover:text-yellow-400">Projects</a></li>
+                <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero min-h-screen bg-gray-900 flex items-center justify-center">
+        <div class="text-center">
+            <img src="a.jpg" alt="Evaan Rahman" class="rounded-photo mx-auto mb-5">
+            <h1 class="mb-5 text-5xl font-bold">Hello, I'm Evaan</h1>
+            <p class="mb-5">A backend developer passionate about building robust and scalable web applications.</p>
+            <a href="#contact" class="btn btn-primary">Contact Me</a>
+        </div>
+    </section>
+
+ 
+    <section id="about" class="container mx-auto p-5">
+        <h2 class="text-3xl font-bold mb-5">About Me</h2>
+        <p>Hello! I'm Evaan, a backend developer from Dhaka, Bangladesh, currently living in Uttara, Dhaka. I enjoy building robust and scalable web applications, and I have a strong foundation in both frontend and backend technologies. I'm always excited to learn new things and take on challenging projects.</p>
+    </section>
+
+
+    <section id="skills" class="container mx-auto p-5 bg-gray-800 rounded-lg">
+        <h2 class="text-3xl font-bold mb-5">Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+                <h3 class="font-bold">Languages I Code In</h3>
+                <ul class="flex flex-wrap gap-2">
+                    <li><img src="https://img.shields.io/badge/-C-A8B9CC?logo=c&logoColor=white&style=flat"></li>
+                    <li><img src="https://img.shields.io/badge/-C++-00599C?logo=c%2B%2B&logoColor=white&style=flat"></li>
+                    <li><img src="https://img.shields.io/badge/-Java-007396?logo=java&logoColor=white&style=flat"></li>
+                    <li><img src="https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white&style=flat"></li>
+                    <li><img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat"></li>
+                    <li><img src="https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white&style=flat"></li>
+                    <li><img src="https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white&style=flat"></li>
+                    <li><img src="https://img.shields.io/badge/-SQL-4479A1?logo=sql&logoColor=white&style=flat"></li>
+                    <li><img src="https://img.shields.io/badge/-Kotlin-0095D5?logo=kotlin&logoColor=white&style=flat"></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold">Technologies I Know</h3>
+                <ul class="flex flex-wrap gap-2">
+                    <li><img src="https://img.shields.io/badge/-Tailwind%20CSS-38B2AC?logo=tailwind-css&logoColor=white&style=flat"></li>
+                    <li><img src="https://img.shields.io/badge/-Bootstrap-7952B3?logo=bootstrap&logoColor=white&style=flat"></li>
+                    <li><img src="https://img.shields.io/badge/-Daisy%20UI-5A67D8?logo=daisyui&logoColor=white&style=flat"></li>
+                    <li><img src="https://img.shields.io/badge/-Django-092E20?logo=django&logoColor=white&style=flat"></li>
+                    <li><img src="https://img.shields.io/badge/-Django%20REST%20Framework-092E20?logo=django&logoColor=white&style=flat"></li>
+                    <li><img src="https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white&style=flat"></li>
+                    <li><img src="https://img.shields.io/badge/-Prettier-F7B93E?logo=prettier&logoColor=white&style=flat"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="container mx-auto p-5">
+        <h2 class="text-3xl font-bold mb-5">Open Source Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="card bg-gray-800 text-gray-100 shadow-md p-4">
+                <img src="propsmart.netlify.app_ (5).png" alt="PropSmart Screenshot" class="w-full h-48 object-cover rounded cursor-pointer" onclick="openModal('propsmart.netlify.app_ (5).png')">
+                <div class="mt-4">
+                    <h3 class="font-bold text-xl">PropSmart Frontend</h3>
+                    <p class="text-sm">A frontend application for real estate management.</p>
+                    <p><a href="https://github.com/evaan321/PropSmart-Frontend" class="link link-primary">GitHub Repo</a> | <a href="https://propsmart.netlify.app/" class="link link-primary">Live Link</a></p>
+                </div>
+            </div>
+            <div class="card bg-gray-800 text-gray-100 shadow-md p-4">
+                <img src="propsmart.netlify.app_ (5).png" alt="PropSmart Screenshot" class="w-full h-48 object-cover rounded cursor-pointer" onclick="openModal('propsmart.netlify.app_ (5).png')">
+                <div class="mt-4">
+                    <h3 class="font-bold text-xl">PropSmart Backend</h3>
+                    <p class="text-sm">A backend application for real estate management.</p>
+                    <p><a href="https://github.com/evaan321/PropSmart" class="link link-primary">GitHub Repo</a> | <a href="https://propsmart.onrender.com/" class="link link-primary">Live Link</a></p>
+                </div>
+            </div>
+            <div class="card bg-gray-800 text-gray-100 shadow-md p-4">
+                <img src="mememansion.netlify.app_ (3).png" alt="Meme Mansion Screenshot" class="w-full h-48 object-cover rounded cursor-pointer" onclick="openModal('mememansion.netlify.app_ (3).png')">
+                <div class="mt-4">
+                    <h3 class="font-bold text-xl">Meme Mansion Frontend</h3>
+                    <p class="text-sm">A frontend application for a meme sharing platform.</p>
+                    <p><a href="https://github.com/evaan321/Meme-Mansion-frontend" class="link link-primary">GitHub Repo</a> | <a href="https://mememansion.netlify.app/" class="link link-primary">Live Link</a></p>
+                </div>
+            </div>
+            <div class="card bg-gray-800 text-gray-100 shadow-md p-4">
+                <img src="mememansion.netlify.app_ (3).png" alt="Meme Mansion Screenshot" class="w-full h-48 object-cover rounded cursor-pointer" onclick="openModal('mememansion.netlify.app_ (3).png')">
+                <div class="mt-4">
+                    <h3 class="font-bold text-xl">Meme Mansion Backend</h3>
+                    <p class="text-sm">A backend application for a meme sharing platform.</p>
+                    <p><a href="https://github.com/evaan321/Meme-Mansion-backend" class="link link-primary">GitHub Repo</a></p>
+                </div>
+            </div>
+            <div class="card bg-gray-800 text-gray-100 shadow-md p-4">
+                <img src="newspaper-r9cg.onrender.com_category_Politics_.png" alt="Newspaper Screenshot" class="w-full h-48 object-cover rounded cursor-pointer" onclick="openModal('newspaper-r9cg.onrender.com_category_Politics_.png')">
+                <div class="mt-4">
+                    <h3 class="font-bold text-xl">Newspaper</h3>
+                    <p class="text-sm">An application for reading and sharing news articles.</p>
+                    <p><a href="https://github.com/evaan321/Newspaper" class="link link-primary">GitHub Repo</a> | <a href="https://newspaper-r9cg.onrender.com/" class="link link-primary">Live Link</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden">
+        <span class="absolute top-0 right-0 p-4 text-3xl text-white cursor-pointer" onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="Enlarged Image" class="max-w-full max-h-full">
+    </div>
+
+    <section id="contact" class="container mx-auto p-5 bg-gray-800 rounded-lg">
+        <h2 class="text-3xl font-bold mb-5">Follow Me</h2>
+        <p>Feel free to connect with me on the following platforms:</p>
+        <ul class="list-none">
+            <li><a href="https://github.com/evaan321" class="link link-primary">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/abdullah-rahman-evaan-0544392a5/" class="link link-primary">LinkedIn</a></li>
+            <li><a href="mailto:evaanrahman2@gmail.com" class="link link-primary">Email</a></li>
+        </ul>
+    </section>
+
+ 
+    <footer class="bg-gray-800 p-4 mt-5 text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2024 Evaan Rahman. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+  
+
+    <script>
+        function openModal(imageSrc) {
+            document.getElementById('modalImage').src = imageSrc;
+            document.getElementById('imageModal').classList.remove('hidden');
+        }
+
+        function closeModal() {
+            document.getElementById('imageModal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
