@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,7 @@
         }
     </style>
 </head>
+
 <body class="bg-gray-900 text-gray-100">
 
     <nav class="bg-gray-800 p-4">
@@ -34,16 +36,15 @@
             <img src="a.jpg" alt="Evaan Rahman" class="rounded-photo mx-auto mb-5">
             <h1 class="mb-5 text-5xl font-bold">Hello, I'm Evaan</h1>
             <p class="mb-5">A backend developer passionate about building robust and scalable web applications.</p>
-            <a href="#contact" class="btn btn-primary">Contact Me</a>
+            <button class="btn btn-primary" onclick="openContactModal()">Contact Me</button>
+            <a href="https://drive.google.com/file/d/1HiH9jFKeVClNo0gIV7kIJprsjhn9Fli2/view?usp=drive_link" class="btn btn-secondary ml-2">Download Resume</a>
         </div>
     </section>
 
- 
     <section id="about" class="container mx-auto p-5">
         <h2 class="text-3xl font-bold mb-5">About Me</h2>
         <p>Hello! I'm Evaan, a backend developer from Dhaka, Bangladesh, currently living in Uttara, Dhaka. I enjoy building robust and scalable web applications, and I have a strong foundation in both frontend and backend technologies. I'm always excited to learn new things and take on challenging projects.</p>
     </section>
-
 
     <section id="skills" class="container mx-auto p-5 bg-gray-800 rounded-lg">
         <h2 class="text-3xl font-bold mb-5">Skills</h2>
@@ -76,7 +77,6 @@
             </div>
         </div>
     </section>
-
 
     <section id="projects" class="container mx-auto p-5">
         <h2 class="text-3xl font-bold mb-5">Open Source Projects</h2>
@@ -138,15 +138,25 @@
         </ul>
     </section>
 
- 
     <footer class="bg-gray-800 p-4 mt-5 text-center">
         <div class="container mx-auto">
             <p>&copy; 2024 Evaan Rahman. All rights reserved.</p>
         </div>
     </footer>
 
-
-  
+    <!-- Contact Modal -->
+    <div id="contactModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-gray-800 text-gray-100 p-8 rounded-lg max-w-lg w-full">
+            <h2 class="font-bold text-xl mb-4">Contact Details</h2>
+            <p><strong>Phone:</strong> +8801847475487</p>
+            <p><strong>Email:</strong> evaanrahman2@gmail.com</p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/evaan321" class="link link-primary">evaan321</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/abdullah-rahman-evaan-0544392a5/" class="link link-primary">Abdullah Rahman Evaan</a></p>
+            <div class="flex justify-end mt-4">
+                <button class="btn btn-primary" onclick="closeContactModal()">Close</button>
+            </div>
+        </div>
+    </div>
 
     <script>
         function openModal(imageSrc) {
@@ -157,6 +167,15 @@
         function closeModal() {
             document.getElementById('imageModal').classList.add('hidden');
         }
+
+        function openContactModal() {
+            document.getElementById('contactModal').classList.remove('hidden');
+        }
+
+        function closeContactModal() {
+            document.getElementById('contactModal').classList.add('hidden');
+        }
     </script>
 </body>
+
 </html>
